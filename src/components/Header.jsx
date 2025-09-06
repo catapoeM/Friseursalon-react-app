@@ -1,5 +1,6 @@
 // src/components/Header.jsx
 import { Link } from "react-router-dom";
+import  logo from "../assets/zc.png";
 
 function Header() {
   return (
@@ -7,8 +8,12 @@ function Header() {
       <nav style={{ display: "flex", alignItems: "center", flexWrap:"wrap", justifyContent: "center", width: "100%"}}>
         
         {/* Logo */}
-        <div style={{ fontSize: "3rem", fontWeight: "bold", color: "#ff4081", flex:"1 1 auto"}}>
-          Zavoi✂️C
+        <div style={{ flex: "1 1 auto" }}>
+          <img 
+            src={logo} 
+            alt="ZC Salon Logo" 
+            style={{ height: "200px", objectFit: "contain" }}
+          />
         </div>
 
         {/* Navigation */}
