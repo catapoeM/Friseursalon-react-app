@@ -1,6 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import uberUnsImg from "./assets/uber.png";
 
 function Home() {
   return <h2>Willkommen im ZC Hair Salon</h2>;
@@ -15,8 +16,34 @@ function Services() {
 }
 
 function About() {
-  return <h2>Über uns</h2>;
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        right: 0,
+        width: "50vw",
+        height: "100vh",
+        backgroundImage: `url(${uberUnsImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        zIndex: 10
+      }}
+    >
+      {/* Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "rgba(0,0,0,0.5)", // darker overlay for contrast
+        }}
+      />
+
+    </div>
+  );
 }
+
+
 
 function App() {
   return (
