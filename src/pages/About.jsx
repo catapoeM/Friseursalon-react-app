@@ -29,6 +29,7 @@ function About() {
 Wir legen großen Wert auf Qualität und Nachhaltigkeit: Hochwertige Produkte, modernes Equipment und fachliches Know-how sorgen dafür, dass Sie sich bei jedem Besuch rundum wohlfühlen. Egal ob klassischer Schnitt, trendige Farbe oder ein professionelles Styling für besondere Anlässe – wir begleiten Sie mit Leidenschaft und Präzision.
 
 Bei ZC Hair Salon treffen Tradition und moderne Trends aufeinander. Unser Ziel ist es, dass Sie nicht nur gut aussehen, sondern sich auch gut fühlen. Besuchen Sie uns und erleben Sie, wie Friseurhandwerk in Wien auf höchstem Niveau gelebt wird.
+
         </p>
       </div>
 
