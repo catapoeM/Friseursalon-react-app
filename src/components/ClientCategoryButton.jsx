@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// each dropdown button after it's clicked
 function DropdownItem({ option, checked, onToggle }) {
   return (
     <button
@@ -41,6 +41,7 @@ export default function WrapButton({ label, options }) {
         onClick={() => setOpen(!open)}
         className="px-4 py-2 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition"
       >
+        <span className="ml-2">▼</span>
         {label}
       </button>
 
