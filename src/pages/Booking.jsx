@@ -1,4 +1,4 @@
-import WrapButton from "../components/ClientCategoryButton";
+import WrapButton from "../components/CategoryButton";
 
 export default function Booking() {
   return (
