@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./pages/About";
+import Booking from "./pages/Booking";
 
 function Home() {
   return <h2>Willkommen im ZC Hair Salon</h2>;
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/booking" element={<Booking />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
