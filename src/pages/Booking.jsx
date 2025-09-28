@@ -17,7 +17,7 @@ export default function CreateGenderList() {
 
   return (
     <div>
-      <h1>Termin Buchen</h1>
+      <h1>Termin Buchen!</h1>
       <div className="flex gap-2 mb-4">
         {gender.map((type, index) => (
           <Button key={index} onClick={() => handleButton(type)}>
