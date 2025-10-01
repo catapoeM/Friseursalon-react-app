@@ -1,11 +1,4 @@
-export default function FriseurTabelle() {
-  const servicesDamen = [
-    { name: "Haarschnitt", price: "30€" },
-    { name: "Föhnen", price: "15€" },
-    { name: "Färben", price: "50€" },
-    { name: "Strähnen", price: "60€" }
-  ];
-
+export default function FriseurTabelle({tabelle}) {
   return (
     <div className="p-6">
       <h2 className="text-xl font-bold mb-4">Friseur Dienstleistungen</h2>
@@ -17,7 +10,7 @@ export default function FriseurTabelle() {
           </tr>
         </thead>
         <tbody>
-          {servicesDamen.map((service, index) => (
+          {tabelle.map((service, index) => (
             <tr key={index} className="hover:bg-gray-50">
               <td className="px-4 py-2 border">{service.name}</td>
               <td className="px-4 py-2 border">{service.price}</td>
