@@ -1,3 +1,9 @@
+.table-container {
+  display: flex;
+  flex-direction: column; /* Layout von oben nach unten */
+  align-items: flex-start; /* Elemente oben ausrichten */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
