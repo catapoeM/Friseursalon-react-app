@@ -1,11 +1,12 @@
 
 
-export default function button({onClick, children}) {
+export default function button({onClick, children, className="", ...props}) {
   // A simple function that runs when the button is clicked
   return (
     <button
       onClick={onClick}
-      className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      className={`px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 ${className}`}
+      {...props}
     >
       {children}
     </button>

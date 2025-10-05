@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
-import FriseurTabelle from "../components/LeistungsTabelle";
-import './booking.css';
+import Leistungstabelle from "../components/Leistungstabelle";
 
 export default function CreateGenderList() {
   const services = {
@@ -31,26 +30,34 @@ export default function CreateGenderList() {
   };
   
   return (
-    <div className="tableContainer">
+    <div className="flex flex-col items-center justify-start min-h-screen w-full px-4 sm:px-6 lg:px-8 py-8 bg-white">
       {/* Titel nur solange showTitle true ist */}
-      {showTitle && <h1>Termin Buchen!</h1>}
+      {showTitle && (
+        <h1 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">
+          Termin Buchen!
+          </h1>
+        )}
 
-      <div className="flex gap-2 mb-4">
+      <div className="flex flex-wrap justify-center gap-3 mb-6">
         {gender.map((type, index) => (
-          <Button key={index} onClick={() => handleButton(type)}>
+          <Button key={index} onClick={() => handleButton(type)}
+          className="text-sm sm:text-base px-4 py-2"
+          >
             {type}
           </Button>
         ))}
       </div>
 
-      {/* Hier wird die Tabelle „aufgerufen“, sobald selectedServices true ist */}
-      {selectedServices && (
-        <FriseurTabelle 
-          key={selectedServices}
-          tabelle={services[selectedServices]}
-          category={selectedServices}
-        />
-      )}
+      <div className="w-full max-w-3xl">
+        {/* Hier wird die Tabelle „aufgerufen“, sobald selectedServices true ist */}
+        {selectedServices && (
+          <Leistungstabelle 
+            key={selectedServices}
+            tabelle={services[selectedServices]}
+            category={selectedServices}
+          />
+        )}
+      </div>
     </div>
   );
 }

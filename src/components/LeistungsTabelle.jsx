@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function FriseurTabelle({ tabelle, category }) {
+export default function Leistungstabelle({ tabelle, category }) {
   // Lokaler State für ausgewählte Services
   const [selected, setSelected] = useState([]);
 
